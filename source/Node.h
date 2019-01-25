@@ -3,7 +3,6 @@
 
 #include <string>
 #include <sstream>
-#include <string_view>
 #include <functional>
 #include <algorithm>
 #include <memory>
@@ -37,7 +36,7 @@ public:
 
 	std::vector<NodeSharedPtr> GetChildrenNodes()
 	{
-		return std::vector(sortedChildren.begin(), sortedChildren.end());
+		return std::vector<NodeSharedPtr>(sortedChildren.begin(), sortedChildren.end());
 	}	
 	NodeSharedPtr GetParentNode()
 	{
@@ -62,7 +61,7 @@ public:
 			auto childrenVector=node->GetChildrenNodes();			
 			for(auto& childNode:childrenVector)
 				RecursiveSerialize(childNode, str);			
-			str += std::string_view("#");
+			str += std::string("#");
 		};
 
 		RecursiveSerialize(RootNode, str);
@@ -78,8 +77,8 @@ public:
 		return value < node.GetValue();
 	}
 protected:
-	Node(const T& v, std::string_view name) :value(v), objectName(name) {}
-	Node(T&& v, std::string_view name) :value(v), objectName(name) {}
+	Node(const T& v, std::string name) :value(v), objectName(name) {}
+	Node(T&& v, std::string name) :value(v), objectName(name) {}
 	Node(const Node<T>&) = delete;
 	Node(Node<T>&&) = delete;
 
