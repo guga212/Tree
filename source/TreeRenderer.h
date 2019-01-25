@@ -35,7 +35,7 @@ public:
 		};
 		RecursivePositionCalculation(startNode, Pos2D{ treePosX,treePosY }, Pos2D{ treePosX,treePosY }, nodesValuePostitions, connectionsPostitions);
 		
-		font.loadFromFile("arial.ttf")
+		font.loadFromFile("arial.ttf");
 	}
 
 	void Draw()

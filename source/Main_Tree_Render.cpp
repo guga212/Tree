@@ -14,7 +14,7 @@ int main()
 	auto child31 = child3->CreateChildNode(1.0f);
 
 	sf::RenderWindow window(sf::VideoMode(800, 600), "Tree Rendering!");
-	TreeRenderer treeRenderer(root,&window,0.f,0.0f);
+	TreeRenderer<float> treeRenderer(root,&window,0.f,0.0f);
 
 	while (window.isOpen())
 	{
