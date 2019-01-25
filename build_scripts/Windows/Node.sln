@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NodeTest", "NodeTest.vcxproj", "{504D5341-2178-4F3E-8A6E-9DC6067CF70E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TreeRendering", "TreeRendering.vcxproj", "{0371A8ED-597C-41C8-BB54-F047D4F28265}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -15,6 +17,10 @@ Global
 		{504D5341-2178-4F3E-8A6E-9DC6067CF70E}.Debug|x64.Build.0 = Debug|x64
 		{504D5341-2178-4F3E-8A6E-9DC6067CF70E}.Release|x64.ActiveCfg = Release|x64
 		{504D5341-2178-4F3E-8A6E-9DC6067CF70E}.Release|x64.Build.0 = Release|x64
+		{0371A8ED-597C-41C8-BB54-F047D4F28265}.Debug|x64.ActiveCfg = Debug|x64
+		{0371A8ED-597C-41C8-BB54-F047D4F28265}.Debug|x64.Build.0 = Debug|x64
+		{0371A8ED-597C-41C8-BB54-F047D4F28265}.Release|x64.ActiveCfg = Release|x64
+		{0371A8ED-597C-41C8-BB54-F047D4F28265}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
