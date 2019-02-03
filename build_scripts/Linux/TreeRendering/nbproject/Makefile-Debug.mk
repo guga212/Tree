@@ -71,7 +71,7 @@ ${CND_DISTDIR}/../../../../bin/Linux/TreeRendering: ${OBJECTFILES}
 ${OBJECTDIR}/_ext/516c69aa/Main_Tree_Render.o: ../../../source/Main_Tree_Render.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/516c69aa
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I../../../include -std=c++17 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/516c69aa/Main_Tree_Render.o ../../../source/Main_Tree_Render.cpp
+	$(COMPILE.cc) -g -I../../../include -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/516c69aa/Main_Tree_Render.o ../../../source/Main_Tree_Render.cpp
 
 # Subprojects
 .build-subprojects:
